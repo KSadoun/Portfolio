@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Full Stack Web Developer, Laravel Specialist — Portfolio" />
+    <meta name="description" content="Full Stack Web Developer, Laravel Specialist | Portfolio" />
     <title>Portfolio | Full Stack Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -53,124 +54,6 @@
         },
       };
     </script>
-    <style>
-      html {
-        transition: background-color 0.35s ease, color 0.35s ease;
-      }
-      body {
-        transition: background-color 0.35s ease, color 0.35s ease;
-      }
-      .reveal-on-scroll {
-        opacity: 0;
-        transform: translateY(28px);
-        transition:
-          opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-          transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .reveal-on-scroll.reveal-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      [dir='rtl'] .reveal-on-scroll {
-        transform: translateY(28px);
-      }
-      [dir='rtl'] .reveal-on-scroll.reveal-visible {
-        transform: translateY(0);
-      }
-      .skill-tile:focus-visible {
-        outline: 2px solid #0f7b3a;
-        outline-offset: 4px;
-        border-radius: 1rem;
-      }
-      .skill-icon {
-        transition:
-          transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-          box-shadow 0.35s ease,
-          background-color 0.35s ease,
-          border-color 0.35s ease;
-      }
-      .skill-tile:hover .skill-icon,
-      .skill-tile:focus-visible .skill-icon {
-        transform: translateY(-6px) scale(1.06);
-        box-shadow:
-          0 20px 40px -12px rgba(15, 123, 58, 0.38),
-          0 0 0 1px rgba(15, 123, 58, 0.12);
-      }
-      .skill-tile-name {
-        position: absolute;
-        left: 50%;
-        top: calc(100% + 0.12rem);
-        z-index: 20;
-        transform: translateX(-50%) translateY(4px);
-        opacity: 0;
-        pointer-events: none;
-        transition:
-          opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-          transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .skill-tile:hover .skill-tile-name,
-      .skill-tile:focus-visible .skill-tile-name {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-      }
-      .project-card {
-        transition:
-          transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-          box-shadow 0.4s ease,
-          border-color 0.35s ease;
-      }
-      .project-card:hover {
-        transform: translateY(-10px);
-      }
-      .project-img-wrap img {
-        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .project-card:hover .project-img-wrap img {
-        transform: scale(1.08);
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .reveal-on-scroll {
-          opacity: 1;
-          transform: none;
-          transition: none;
-        }
-        .reveal-on-scroll.reveal-visible {
-          opacity: 1;
-          transform: none;
-        }
-        .animate-float {
-          animation: none;
-        }
-        .skill-tile:hover .skill-icon,
-        .skill-tile:focus-visible .skill-icon {
-          transform: none;
-        }
-        .skill-tile-name {
-          opacity: 1;
-          transform: translateX(-50%) translateY(0);
-        }
-        html {
-          scroll-behavior: auto;
-        }
-      }
-      .mesh-hero {
-        background-image:
-          radial-gradient(at 80% 20%, rgba(15, 123, 58, 0.14) 0px, transparent 50%),
-          radial-gradient(at 10% 80%, rgba(16, 185, 129, 0.12) 0px, transparent 45%);
-      }
-      .dark .mesh-hero {
-        background-image:
-          radial-gradient(at 80% 20%, rgba(15, 123, 58, 0.22) 0px, transparent 50%),
-          radial-gradient(at 10% 80%, rgba(16, 185, 129, 0.1) 0px, transparent 45%);
-      }
-      .dot-grid {
-        background-image: radial-gradient(rgba(15, 123, 58, 0.11) 1px, transparent 1px);
-        background-size: 28px 28px;
-      }
-      .dark .dot-grid {
-        background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px);
-      }
-    </style>
   </head>
   <body
     class="min-h-screen bg-white text-slate-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
@@ -324,7 +207,7 @@
               Hi, I'm
             </p>
             <h1 class="mb-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent dark:from-white dark:via-slate-100 dark:to-slate-400 sm:text-5xl lg:text-6xl xl:text-7xl">
-              <span data-i18n="heroName">[Your Name Here]</span>
+              <span data-i18n="heroName">Khalid Sadoun</span>
             </h1>
             <p class="text-xl font-semibold text-slate-700 dark:text-slate-200 sm:text-2xl" data-i18n="heroTitle">
               Full Stack Web Developer, Laravel Specialist
@@ -363,13 +246,10 @@
             <div
               class="animate-float relative flex h-56 w-56 items-center justify-center rounded-full border-[3px] border-accent/35 bg-gradient-to-br from-white to-slate-100 p-1.5 shadow-2xl shadow-accent/15 ring-4 ring-accent/10 dark:from-slate-800 dark:to-slate-900 dark:ring-accent/20 sm:h-64 sm:w-64"
             >
-              <div
-                class="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800"
-                aria-hidden="true"
-              >
-                <i class="fa-solid fa-user text-7xl text-slate-500/90 dark:text-slate-400 sm:text-8xl"></i>
+                <img src="./public/khalid.png" alt="" class="h-full w-full rounded-full object-cover" />
+                
               </div>
-              <!-- Replace the inner div above with <img src="your-photo.jpg" alt="" class="h-full w-full rounded-full object-cover" /> -->
+              <!-- Replace the inner div above with  -->
             </div>
           </div>
         </div>

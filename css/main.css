@@ -1,0 +1,116 @@
+html {
+        transition: background-color 0.35s ease, color 0.35s ease;
+      }
+      body {
+        transition: background-color 0.35s ease, color 0.35s ease;
+      }
+      .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .reveal-on-scroll.reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      [dir='rtl'] .reveal-on-scroll {
+        transform: translateY(28px);
+      }
+      [dir='rtl'] .reveal-on-scroll.reveal-visible {
+        transform: translateY(0);
+      }
+      .skill-tile:focus-visible {
+        outline: 2px solid #0f7b3a;
+        outline-offset: 4px;
+        border-radius: 1rem;
+      }
+      .skill-icon {
+        transition:
+          transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 0.35s ease,
+          background-color 0.35s ease,
+          border-color 0.35s ease;
+      }
+      .skill-tile:hover .skill-icon,
+      .skill-tile:focus-visible .skill-icon {
+        transform: translateY(-6px) scale(1.06);
+        box-shadow:
+          0 20px 40px -12px rgba(15, 123, 58, 0.38),
+          0 0 0 1px rgba(15, 123, 58, 0.12);
+      }
+      .skill-tile-name {
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 0.12rem);
+        z-index: 20;
+        transform: translateX(-50%) translateY(4px);
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .skill-tile:hover .skill-tile-name,
+      .skill-tile:focus-visible .skill-tile-name {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+      .project-card {
+        transition:
+          transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 0.4s ease,
+          border-color 0.35s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+      }
+      .project-img-wrap img {
+        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .project-card:hover .project-img-wrap img {
+        transform: scale(1.08);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-on-scroll {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .reveal-on-scroll.reveal-visible {
+          opacity: 1;
+          transform: none;
+        }
+        .animate-float {
+          animation: none;
+        }
+        .skill-tile:hover .skill-icon,
+        .skill-tile:focus-visible .skill-icon {
+          transform: none;
+        }
+        .skill-tile-name {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      .mesh-hero {
+        background-image:
+          radial-gradient(at 80% 20%, rgba(15, 123, 58, 0.14) 0px, transparent 50%),
+          radial-gradient(at 10% 80%, rgba(16, 185, 129, 0.12) 0px, transparent 45%);
+      }
+      .dark .mesh-hero {
+        background-image:
+          radial-gradient(at 80% 20%, rgba(15, 123, 58, 0.22) 0px, transparent 50%),
+          radial-gradient(at 10% 80%, rgba(16, 185, 129, 0.1) 0px, transparent 45%);
+      }
+      .dot-grid {
+        background-image: radial-gradient(rgba(15, 123, 58, 0.11) 1px, transparent 1px);
+        background-size: 28px 28px;
+      }
+      .dark .dot-grid {
+        background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px);
+      }

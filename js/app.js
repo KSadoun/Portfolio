@@ -9,7 +9,7 @@
 
   const translations = {
     en: {
-      navBrand: 'Portfolio',
+      navBrand: 'K.S',
       navHome: 'Home',
       navEducation: 'Education',
       navSkills: 'Skills',
@@ -23,7 +23,7 @@
       langSwitch: 'العربية',
       ariaLangSwitch: 'Switch to Arabic',
       heroGreeting: "Hi, I'm",
-      heroName: '[Your Name Here]',
+      heroName: 'Khalid Sadoun',
       heroTitle: 'Full Stack Web Developer, Laravel Specialist',
       heroTagline: 'I craft reliable APIs and polished, accessible interfaces.',
       heroBio:
@@ -93,7 +93,7 @@
       tooltipMongo: 'MongoDB',
     },
     ar: {
-      navBrand: 'المعرض',
+      navBrand: 'K.S',
       navHome: 'الرئيسية',
       navEducation: 'التعليم',
       navSkills: 'المهارات',
@@ -107,7 +107,7 @@
       langSwitch: 'English',
       ariaLangSwitch: 'التبديل إلى الإنجليزية',
       heroGreeting: 'مرحباً، أنا',
-      heroName: '[Your Name Here]',
+      heroName: 'خالد سعدون',
       heroTitle: 'مطوّر ويب متكامل، متخصص في Laravel',
       heroTagline: 'أبني واجهات أنيقة وواجهات برمجية يمكن الاعتماد عليها.',
       heroBio:
