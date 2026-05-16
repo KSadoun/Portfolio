@@ -169,12 +169,12 @@
             data-i18n="navProjects"
             >Projects</a
           >
-          <a
+          <!-- <a
             href="#certifications"
             class="mobile-nav-link rounded-lg px-3 py-3 text-base font-medium text-slate-700 hover:bg-accent-muted hover:text-accent dark:text-slate-200"
             data-i18n="navCerts"
             >Certifications</a
-          >
+          > -->
           <a
             href="#connect"
             class="mobile-nav-link rounded-lg px-3 py-3 text-base font-medium text-slate-700 hover:bg-accent-muted hover:text-accent dark:text-slate-200"
@@ -308,7 +308,7 @@
       </section>
 
       <!-- Stack Section with Animation and Spacing -->
-      <section id="stack" class="py-24 px-4 sm:px-6 lg:px-8">
+      <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8">
         <div class="relative mx-auto max-w-7xl">
           <div class="reveal-on-scroll mb-14 text-center animate-fade-in-up" style="animation-delay:0.1s; animation-fill-mode:both;">
             <p class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent dark:text-accent-light">
@@ -405,6 +405,35 @@
               class="project-card reveal-on-scroll flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-card-dark"
             >
               <div class="project-img-wrap relative h-56 overflow-hidden bg-slate-200 sm:h-64 lg:h-72 dark:bg-slate-800">
+                <a href="https://hydra-cosmetics.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="./public/hydra.png"
+                    alt="Hydra Cosmetics Project Screenshot"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </a>
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-70 dark:from-slate-950/60"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="flex flex-1 flex-col p-8 lg:p-10">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-accent dark:text-accent-light">
+                  Laravel · Tailwind CSS · E-Commerce
+                </p>
+                <h3 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white lg:text-[1.65rem]">
+                  Hydra Cosmetics
+                </h3>
+                <p class="flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-400">
+                  Hydra Cosmetics is a modern e-commerce website for selling hair and body cosmetics. Built with Laravel and Tailwind CSS, it features a user-friendly shopping experience, product catalog, and secure checkout. <a href="https://hydra-cosmetics.lovestoblog.com/" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:text-accent-dark">Visit Site</a>
+                </p>
+              </div>
+            </article>
+            <article
+              class="project-card reveal-on-scroll flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-card-dark"
+            >
+              <div class="project-img-wrap relative h-56 overflow-hidden bg-slate-200 sm:h-64 lg:h-72 dark:bg-slate-800">
                 <a href="https://showtime-pro.wuaze.com/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="./public/mbs.png"
@@ -459,102 +488,13 @@
                 </p>
               </div>
             </article>
-            <article
-              class="project-card reveal-on-scroll flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-card-dark"
-            >
-              <div class="project-img-wrap relative h-56 overflow-hidden bg-slate-200 sm:h-64 lg:h-72 dark:bg-slate-800">
-                <img
-                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=960&q=80"
-                  alt=""
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                  width="960"
-                  height="600"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-70 dark:from-slate-950/60"
-                  aria-hidden="true"
-                ></div>
-              </div>
-              <div class="flex flex-1 flex-col p-8 lg:p-10">
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-accent dark:text-accent-light" data-i18n="proj1Stack">
-                  Laravel · Blade · MySQL · Tailwind CSS
-                </p>
-                <h3 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white lg:text-[1.65rem]" data-i18n="proj1Title">
-                  E-Commerce Platform
-                </h3>
-                <p class="flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-400" data-i18n="proj1Desc">
-                  End-to-end e-commerce with catalog search, cart, checkout, and an admin dashboard for inventory and orders.
-                  Emphasis on validation, payments, and a responsive storefront that stays fast under load.
-                </p>
-              </div>
-            </article>
-            <article
-              class="project-card reveal-on-scroll flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-card-dark"
-            >
-              <div class="project-img-wrap relative h-56 overflow-hidden bg-slate-200 sm:h-64 lg:h-72 dark:bg-slate-800">
-                <img
-                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=960&q=80"
-                  alt=""
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                  width="960"
-                  height="600"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-70 dark:from-slate-950/60"
-                  aria-hidden="true"
-                ></div>
-              </div>
-              <div class="flex flex-1 flex-col p-8 lg:p-10">
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-accent dark:text-accent-light" data-i18n="proj2Stack">
-                  Node.js · Express · MongoDB · JWT
-                </p>
-                <h3 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white lg:text-[1.65rem]" data-i18n="proj2Title">
-                  REST Task API
-                </h3>
-                <p class="flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-400" data-i18n="proj2Desc">
-                  Modular REST API with authentication, refresh tokens, and role-based access. Includes rate limiting hooks,
-                  structured errors, and OpenAPI-style docs so clients can integrate quickly.
-                </p>
-              </div>
-            </article>
-            <article
-              class="project-card reveal-on-scroll flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-card-dark"
-            >
-              <div class="project-img-wrap relative h-56 overflow-hidden bg-slate-200 sm:h-64 lg:h-72 dark:bg-slate-800">
-                <img
-                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=960&q=80"
-                  alt=""
-                  class="h-full w-full object-cover"
-                  loading="lazy"
-                  width="960"
-                  height="600"
-                />
-                <div
-                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-70 dark:from-slate-950/60"
-                  aria-hidden="true"
-                ></div>
-              </div>
-              <div class="flex flex-1 flex-col p-8 lg:p-10">
-                <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-accent dark:text-accent-light" data-i18n="proj3Stack">
-                  HTML · Tailwind CSS · Vanilla JavaScript
-                </p>
-                <h3 class="mb-4 text-2xl font-bold text-slate-900 dark:text-white lg:text-[1.65rem]" data-i18n="proj3Title">
-                  Developer Portfolio
-                </h3>
-                <p class="flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-400" data-i18n="proj3Desc">
-                  Single-page portfolio with theme toggle, bilingual copy, RTL layout, scroll reveals, and zero framework
-                  overhead—optimized for clarity and performance.
-                </p>
-              </div>
-            </article>
+            
           </div>
         </div>
       </section>
 
       <!-- Certifications -->
-      <section id="certifications" class="relative bg-slate-50 px-4 py-20 dark:bg-slate-900/50 sm:px-6 lg:px-8">
+      <!-- <section id="certifications" class="relative bg-slate-50 px-4 py-20 dark:bg-slate-900/50 sm:px-6 lg:px-8">
         <div class="dot-grid pointer-events-none absolute inset-0 opacity-25 dark:opacity-15" aria-hidden="true"></div>
         <div class="relative mx-auto max-w-7xl">
           <div class="reveal-on-scroll mb-14 text-center">
@@ -615,7 +555,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Connect -->
       <section id="connect" class="px-4 py-24 sm:px-6 lg:px-8">
